@@ -17,7 +17,7 @@ function App() {
 
   const filterItems = (category) => {
     // Filter the menu items based on the selected category
-    const newItems = menuData.filter((item) => item.category === category);
+    const newItems = menuData.filter((item) => item.category === category.toLowerCase());
     // Update the state with the filtered items
     setMenuItems(newItems);
   }
